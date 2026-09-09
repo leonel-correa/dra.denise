@@ -352,3 +352,103 @@ details p{margin:0 35px 24px 0;color:var(--muted);font-size:14px;line-height:1.6
   html{scroll-behavior:auto}
   *,*:before,*:after{transition:none!important}
 }
+
+/* ===== Refinamentos premium: logo, WhatsApp e cards ===== */
+.brand-plaque{
+  display:block;
+  width:220px;
+  padding:7px 11px;
+  border-radius:12px;
+  background:rgba(254,244,235,.97);
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+.brand-plaque img{width:100%;height:auto;filter:none;opacity:1}
+.whatsapp-icon{width:20px;height:20px;flex:0 0 20px;fill:currentColor}
+.nav-cta{display:inline-flex;align-items:center;gap:8px}
+.btn .whatsapp-icon{width:20px;height:20px}
+
+/* Cards em bordô com tipografia dourada, brilho sutil e elevação no hover */
+.service-card,
+.service-card.featured{
+  background:linear-gradient(145deg,#5b0c17 0%,#6c111e 62%,#4c0812 100%);
+  border:1px solid rgba(153,110,60,.55);
+  box-shadow:0 15px 38px rgba(91,12,23,.14), inset 0 1px 0 rgba(255,255,255,.07);
+  color:#fef4eb;
+}
+.service-card:before{
+  content:"";
+  position:absolute;
+  width:180px;height:180px;
+  top:-105px;right:-80px;
+  border-radius:50%;
+  border:1px solid rgba(201,166,108,.18);
+  box-shadow:0 0 0 18px rgba(201,166,108,.025),0 0 0 36px rgba(201,166,108,.018);
+  transition:transform .45s ease;
+}
+.service-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.08) 47%,transparent 64%);
+  transform:translateX(-120%);
+  transition:transform .65s ease;
+  pointer-events:none;
+}
+.service-card:hover{
+  transform:translateY(-9px);
+  border-color:#c9a66c;
+  box-shadow:0 25px 55px rgba(91,12,23,.27),0 0 0 1px rgba(201,166,108,.12);
+}
+.service-card:hover:before{transform:scale(1.18) rotate(12deg)}
+.service-card:hover:after{transform:translateX(120%)}
+.service-card .card-number{color:#c9a66c}
+.service-card .icon{
+  background:rgba(153,110,60,.10);
+  border:1px solid rgba(201,166,108,.55);
+  color:#c9a66c;
+  box-shadow:0 8px 20px rgba(0,0,0,.13);
+  position:relative;z-index:2;
+}
+.service-card h3{color:#c9a66c;position:relative;z-index:2}
+.service-card p{color:rgba(254,244,235,.78);position:relative;z-index:2}
+.service-card a{color:#fef4eb;z-index:3}
+.service-card a span{color:#c9a66c}
+
+/* Imagem da Denise no banner e na seção de atendimento */
+.hero-visual .portrait{border:1px solid rgba(201,166,108,.35)}
+.about-photo{filter:drop-shadow(0 22px 35px rgba(91,12,23,.12))}
+.about-photo-label{
+  position:absolute;z-index:3;left:-16px;top:30px;
+  background:#5b0c17;color:#c9a66c;
+  padding:10px 16px;border:1px solid rgba(201,166,108,.55);
+  border-radius:0 12px 12px 0;
+  font:600 9px "Poppins",sans-serif;letter-spacing:.16em;
+  box-shadow:0 12px 25px rgba(91,12,23,.2)
+}
+
+/* Logo original em uma base clara, tanto no banner quanto no rodapé */
+.footer-logo-plaque{
+  width:min(250px,100%);
+  padding:9px 12px;
+  border-radius:14px;
+  background:#fef4eb;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+.footer-logo-plaque .footer-logo{width:100%;margin:0;filter:none}
+
+/* WhatsApp flutuante com ícone real e presença visual */
+.floating-whatsapp{
+  background:#20b85a;
+  padding:13px 18px;
+  gap:9px;
+  box-shadow:0 14px 35px rgba(32,184,90,.30);
+}
+.floating-whatsapp .whatsapp-icon{width:23px;height:23px}
+.floating-whatsapp:hover{background:#1aa951;box-shadow:0 18px 42px rgba(32,184,90,.38)}
+
+@media (max-width:680px){
+  .brand-plaque{width:174px;padding:5px 7px}
+  .nav-cta{padding:10px 12px}
+  .nav-cta .whatsapp-icon{width:17px;height:17px}
+  .about-photo-label{left:0;top:20px}
+}

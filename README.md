@@ -26,3 +26,10 @@ Landing page estática em HTML + CSS puro, pronta para GitHub + Vercel.
 - A seção de depoimentos contém textos **exemplificativos**, conforme solicitado. Para publicação profissional, substitua por avaliações reais e autorizadas.
 - Não foi inventado número de OAB, endereço ou outras credenciais que não foram fornecidas.
 - A página usa Poppins e Roboto via Google Fonts.
+
+## Atualização desta versão
+
+- Logo original aplicado no banner e no rodapé em base clara.
+- Foto da Denise mantida em destaque no banner e na seção “Sobre o atendimento”.
+- Botões de WhatsApp receberam ícone visível e melhor destaque visual.
+- Cards de áreas de atuação receberam fundo bordô, textos/ícones dourados e efeitos de hover.
